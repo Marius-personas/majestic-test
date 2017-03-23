@@ -1,0 +1,50 @@
+﻿.button {
+    color: @white;
+    height: 50px;
+    background-color: @pink;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    font-weight: 600;
+    .transition(all, 0.5s, ease);
+    &:hover {
+        background-color: fade(@pink, 60%);
+        .transition(all, 0.5s, ease);
+    }
+}
+
+.button--like {
+    height: 36px;
+    width: 78px;
+    background-color: @pink;
+    &.reply {
+        background-color: @white;
+        color: @pink;
+        border: 1px solid @pink;
+        .transition(all, 0.5s, ease);
+        &:hover {
+            .transition(all, 0.5s, ease);
+            background-color: @pink;
+            color: @white;
+        }
+    }
+}
+
+.button--send {
+    width: 133px;
+    float: right;
+    &:after {
+        clear: both;
+    }
+}
+
+
+.button--leave-review {
+    width: 210px;
+    float: right;
+    &:after {
+        clear: both;
+    }
+}
